@@ -1,0 +1,6 @@
+apiVersion: v2
+name: your-app
+description: Test-App für GitOps-Setup auf OpenShift
+type: application
+version: 0.1.0
+appVersion: "latest"

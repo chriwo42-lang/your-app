@@ -1,0 +1,21 @@
+replicaCount: 2
+
+image:
+  repository: quay.io/openshift/origin-hello-openshift
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  port: 8080
+
+route:
+  enabled: true
+  tls: true
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 200m
+    memory: 128Mi
